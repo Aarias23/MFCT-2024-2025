@@ -1,0 +1,107 @@
+/* Estilos CSS minimalistas */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+/* Logo */
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logo {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+/* Título y Subtítulo */
+.page-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.sub-title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.additional-text {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Tabla */
+table.table {
+  width: 100%;
+  background-color: #ffffff; /* Keep the white background for the table */
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+table.table th,
+table.table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+
+table.table th {
+  background-color: #003366; /* Dark blue for the header */
+  color: #ffffff; /* White text for the header */
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+table.table td,
+table.table th {
+  border: 1px solid #b0b0b0; /* Light grey for the borders */
+  font-size: 12px;
+  text-align: left;
+  padding: 8px;
+}
+
+table.table tr:nth-child(even) {
+  background-color: #f5f5f5; /* Light grey for alternating rows */
+}
+
+table.table tr:nth-child(odd) {
+  background-color: #ffffff; /* White for odd rows */
+}
+
+table.table tr:hover {
+  background-color: #f5f5f5; /* Keep light grey on hover */
+}
+
+/* Highlight specific columns if needed */
+table.table .highlight-column {
+  background-color: #f5f5dc; /* Beige for highlighting */
+  color: #8b0000; /* Deep red for the text in highlighted columns */
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  table.table {
+    font-size: 12px;
+  }
+  table.table th,
+  table.table td {
+    max-width: none;
+    word-break: break-all;
+  }
+  .logo {
+    max-width: 80px;
+  }
+  .page-title {
+    font-size: 20px;
+  }
+  .sub-title {
+    font-size: 16px;
+  }
+  .additional-text {
+    font-size: 11px;
+  }
+}
